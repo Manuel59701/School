@@ -23,6 +23,14 @@ const CLASS_OPTIONS = [
   "SSS 1","SSS 2","SSS 3",
 ];
 
+const GRADE_EQ = {
+  "Nursery 1": "Age 3–4", "Nursery 2": "Age 4–5", "Nursery 3": "Age 5–6",
+  "Primary 1": "Grade 1", "Primary 2": "Grade 2", "Primary 3": "Grade 3",
+  "Primary 4": "Grade 4", "Primary 5": "Grade 5",
+  "JSS 1": "Grade 7", "JSS 2": "Grade 8", "JSS 3": "Grade 9",
+  "SSS 1": "Grade 10", "SSS 2": "Grade 11", "SSS 3": "Grade 12",
+};
+
 const SUBJECT_OPTIONS = ["Mathematics","English","Igbo","Coding","Design"];
 
 const Icon = {
@@ -231,7 +239,11 @@ function EnrollModal({ open, onClose }) {
                 Class <span className="req">*</span>
                 <select value={form.className} onChange={e => update("className", e.target.value)}>
                   <option value="">Select class</option>
-                  {CLASS_OPTIONS.map(c => <option key={c} value={c}>{c}</option>)}
+                  {CLASS_OPTIONS.map(c => (
+                    <option key={c} value={c}>
+                      {c}{mode === "online" && GRADE_EQ[c] ? ` (${GRADE_EQ[c]})` : ""}
+                    </option>
+                  ))}
                 </select>
               </label>
 
