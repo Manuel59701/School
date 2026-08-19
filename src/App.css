@@ -35,6 +35,78 @@ button { font-family: 'Manrope', sans-serif; cursor: pointer; }
 ::-webkit-scrollbar-thumb { background: var(--rga-green); border-radius: 3px; }
 
 /* =====================================================================
+   LOADER
+   ===================================================================== */
+.loader-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  background: linear-gradient(160deg, var(--rga-green-deep) 0%, #0a2e06 100%);
+  display: flex; align-items: center; justify-content: center;
+  animation: loaderFadeOut 0.5s ease 1.8s forwards;
+}
+@keyframes loaderFadeOut {
+  to { opacity: 0; pointer-events: none; }
+}
+
+.loader-content {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+}
+
+.loader-icon {
+  animation: loaderPulse 1.2s ease-in-out infinite;
+}
+@keyframes loaderPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.loader-shield {
+  animation: loaderShieldIn 0.6s ease both;
+}
+@keyframes loaderShieldIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loader-star {
+  transform-origin: 32px 28px;
+  animation: loaderStarSpin 1.8s ease-in-out infinite;
+}
+@keyframes loaderStarSpin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.15); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.loader-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900; font-size: 1.1rem;
+  color: #fff; letter-spacing: 0.18em;
+  animation: loaderTextIn 0.5s ease 0.3s both;
+}
+@keyframes loaderTextIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loader-bar-track {
+  width: 180px; height: 4px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 4px; overflow: hidden;
+  animation: loaderTextIn 0.5s ease 0.5s both;
+}
+.loader-bar-fill {
+  height: 100%; width: 0;
+  background: linear-gradient(90deg, var(--rga-green), var(--rga-gold));
+  border-radius: 4px;
+  animation: loaderBar 1.6s ease 0.5s forwards;
+}
+@keyframes loaderBar {
+  0% { width: 0; }
+  60% { width: 85%; }
+  100% { width: 100%; }
+}
+
+/* =====================================================================
    SHARED BUTTONS
    ===================================================================== */
 .btn-primary-green {
