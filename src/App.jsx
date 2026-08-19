@@ -326,6 +326,11 @@ export default function RadiantGloryAcademy() {
         <StarDecor size={36} style={{ position:"absolute", top:"20%", right:"9%", opacity:0.75, animation:"floatStar 3s ease-in-out infinite" }}/>
         <StarDecor size={22} color="#fff" style={{ position:"absolute", top:"32%", right:"17%", opacity:0.4, animation:"floatStar 4s ease-in-out infinite 1s" }}/>
         <StarDecor size={28} style={{ position:"absolute", bottom:"30%", right:"7%", opacity:0.6, animation:"floatStar 3.5s ease-in-out infinite 0.5s" }}/>
+        <StarDecor size={18} color="#fff" style={{ position:"absolute", top:"15%", right:"25%", opacity:0.35, animation:"floatStar 4.5s ease-in-out infinite 2s" }}/>
+        <StarDecor size={24} style={{ position:"absolute", top:"45%", right:"4%", opacity:0.5, animation:"floatStar 3.2s ease-in-out infinite 1.5s" }}/>
+        <StarDecor size={16} color="#fff" style={{ position:"absolute", bottom:"22%", right:"18%", opacity:0.3, animation:"floatStar 5s ease-in-out infinite 0.8s" }}/>
+        <StarDecor size={20} style={{ position:"absolute", top:"60%", left:"85%", opacity:0.45, animation:"floatStar 3.8s ease-in-out infinite 2.5s" }}/>
+        <StarDecor size={14} color="#fff" style={{ position:"absolute", top:"10%", left:"88%", opacity:0.25, animation:"floatStar 4.2s ease-in-out infinite 1.2s" }}/>
 
         <div className="hero-content">
           <span className="hero-eyebrow">⭐ Nursery · Primary · Secondary ⭐</span>
