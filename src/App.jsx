@@ -10,10 +10,10 @@ const EMAILJS_CONFIG = {
 };
 
 const SLIDES = [
-  { src: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1600&q=80", label: "Nigerian students learning together" },
+  { src: "https://images.pexels.com/photos/12448839/pexels-photo-12448839.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop", label: "Nigerian students learning in classroom" },
+  { src: "https://images.pexels.com/photos/12714654/pexels-photo-12714654.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop", label: "Students studying together" },
   { src: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1600&q=80", label: "ICT lab" },
-  { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80", label: "Physics lab" },
-  { src: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1600&q=80", label: "Chemistry lab" },
+  { src: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1600&q=80", label: "Science lab" },
 ];
 
 const CLASS_OPTIONS = [
