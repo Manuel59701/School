@@ -13,7 +13,7 @@ export default function About({ onEnroll }) {
       {/* Left column — copy */}
       <div className="about-text">
         <span className="eyebrow">Our Children, Our Future</span>
-        <h2>A school built for the classroom — and for the screen.</h2>
+        <h2>A school built for the classroom and for the screen.</h2>
         <p className="section-lead">
           Radiant Glory Academy runs a full physical campus alongside a
           structured online programme, so families can choose the format
