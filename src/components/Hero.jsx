@@ -51,8 +51,7 @@ export default function Hero({ onEnroll }) {
           Where every child's <em>light</em> is trained to shine.
         </h1>
         <p className="hero-sub">
-          A nurturing learning community where every child is seen, challenged, and equipped to discover their strengths, build confidence, 
-          and thrive—both in the classroom and beyond. With a vibrant on-campus experience and a full online programme, families can access quality education from anywhere.
+          A nurturing learning community where every child is seen, challenged, and equipped to discover their strengths, build confidence, and thrive—both in the classroom and beyond. With a vibrant on-campus experience and a full online programme, families can access quality education from anywhere.
         </p>
         <div className="hero-actions">
           <button
