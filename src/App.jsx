@@ -61,9 +61,9 @@ function Badge({ size = 44 }) {
   );
 }
 
-function StarDecor({ color = "#F5C518", size = 24, style = {} }) {
+function StarDecor({ color = "#F5C518", size = 24, style = {}, className = "" }) {
   return (
-    <svg viewBox="0 0 24 24" width={size} height={size} fill={color} style={style} aria-hidden="true">
+    <svg viewBox="0 0 24 24" width={size} height={size} fill={color} style={style} className={`star-decor${className ? " " + className : ""}`} aria-hidden="true">
       <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
     </svg>
   );
@@ -495,8 +495,8 @@ export default function RadiantGloryAcademy() {
 
       {/* CTA BANNER */}
       <div className="cta-banner">
-        <StarDecor size={60} color="rgba(255,255,255,0.08)" style={{ position:"absolute", left:30, top:"-10px" }}/>
-        <StarDecor size={40} color="rgba(255,255,255,0.06)" style={{ position:"absolute", right:80, bottom:10 }}/>
+        <StarDecor size={60} color="rgba(255,255,255,0.08)" style={{ position:"absolute", left:"3%", top:"-10px" }}/>
+        <StarDecor size={40} color="rgba(255,255,255,0.06)" style={{ position:"absolute", right:"8%", bottom:10 }}/>
         <div className="cta-content">
           <span className="eyebrow" style={{ color:"var(--rga-gold)" }}>Don't wait</span>
           <h2>Admission forms are open for the new session.</h2>
