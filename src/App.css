@@ -516,7 +516,7 @@ button { font-family: 'Manrope', sans-serif; cursor: pointer; }
 @media (max-width: 900px) {
   .program-grid { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .program-grid { grid-template-columns: 1fr; }
 }
 
@@ -816,7 +816,263 @@ footer {
 .modal-success h3 { color: var(--rga-green-deep); font-size: 1.4rem; margin-top: 8px; }
 .modal-success p { color: #4a5e48; font-size: 0.94rem; max-width: 360px; }
 
+@media (max-width: 600px) {
+  .field-row { grid-template-columns: 1fr; }
+}
 @media (max-width: 480px) {
   .modal-panel { padding: 24px 18px; }
-  .field-row { grid-template-columns: 1fr; }
+}
+
+/* =====================================================================
+   RESPONSIVE — Comprehensive breakpoints
+   ===================================================================== */
+
+/* ---- Wide screens: cap content width ---- */
+@media (min-width: 1400px) {
+  .hero-content { max-width: 900px; }
+  .section { max-width: 1300px; margin-left: auto; margin-right: auto; }
+  .section-tight { max-width: 1300px; margin-left: auto; margin-right: auto; }
+  .cta-banner { max-width: 1300px; margin-left: auto; margin-right: auto; }
+  .footer-inner { max-width: 1300px; margin-left: auto; margin-right: auto; }
+  .online { max-width: 1200px; margin-left: auto; margin-right: auto; }
+}
+
+/* ---- Tablet landscape & below (<= 900px) ---- */
+@media (max-width: 900px) {
+  .hero-content h1 { font-size: clamp(2.2rem, 5.5vw, 3.4rem); }
+  .hero-sub { font-size: 1rem; }
+  .hero-actions { gap: 10px; }
+  .hero-tagline { font-size: 0.9rem; margin-top: 20px; }
+
+  .section { padding: 70px 5vw; }
+  .section-tight { padding: 55px 5vw; }
+
+  .admission-strip { padding: 12px 5vw; gap: 12px; }
+  .strip-sub { flex-basis: 100%; order: 3; }
+
+  .cta-banner { margin: 60px 5vw; padding: 40px 5vw; }
+
+  .footer-inner { padding: 48px 5vw 24px; }
+
+  .online { padding: 44px 4vw; gap: 36px; }
+}
+
+/* ---- Tablet portrait (<= 768px) ---- */
+@media (max-width: 768px) {
+  .nav { padding: 14px 4vw; }
+  .nav.scrolled { padding: 10px 4vw; }
+  .nav-brand-text { font-size: 0.88rem; }
+  .nav-cta { padding: 8px 16px; font-size: 0.82rem; }
+
+  .hero-content { padding: 0 4vw; }
+  .hero-content h1 { font-size: clamp(2rem, 7vw, 3rem); }
+  .hero-sub { font-size: 0.95rem; margin-top: 16px; }
+  .hero-actions { margin-top: 24px; gap: 10px; }
+  .hero-eyebrow { font-size: 0.7rem; padding: 6px 12px; margin-bottom: 18px; }
+  .hero-tagline { font-size: 0.88rem; margin-top: 18px; }
+
+  .section { padding: 60px 5vw; }
+  .section h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); }
+  .section-lead { font-size: 0.95rem; }
+
+  .about-card { padding: 26px; border-radius: 18px; }
+  .about-stats { flex-wrap: wrap; }
+  .stat-item { min-width: 0; }
+  .stat-item b { font-size: 1.6rem; }
+
+  .program-grid { gap: 16px; }
+  .program-card { padding: 22px 18px; border-radius: 14px; }
+  .program-icon { width: 42px; height: 42px; font-size: 1.2rem; border-radius: 11px; }
+
+  .online { padding: 36px 4vw; gap: 28px; border-radius: 20px; }
+  .online h2 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+  .online-chip { padding: 7px 14px; font-size: 0.82rem; }
+  .step-card { padding: 16px; gap: 12px; }
+  .step-num { width: 28px; height: 28px; font-size: 0.85rem; }
+
+  .cta-banner { margin: 50px 5vw; padding: 36px 5vw; border-radius: 18px; }
+  .cta-content h2 { font-size: clamp(1.3rem, 3.5vw, 1.8rem); }
+  .cta-btn { padding: 13px 24px; font-size: 0.92rem; }
+
+  .footer-inner { padding: 40px 5vw 20px; }
+  .footer-col h4 { font-size: 0.95rem; }
+  .footer-col p { font-size: 0.85rem; }
+
+  .mobile-menu a { padding: 12px 4vw; font-size: 0.95rem; }
+  .mobile-menu button { margin: 14px 4vw 0; }
+
+  .modal-panel { max-width: 480px; }
+  .modal-title { font-size: 1.2rem; }
+}
+
+/* ---- Large phones (<= 600px) ---- */
+@media (max-width: 600px) {
+  .nav-brand-text { font-size: 0.8rem; letter-spacing: 0.01em; }
+  .nav-cta { padding: 7px 14px; font-size: 0.78rem; }
+
+  .hero { min-height: 500px; }
+  .hero-content h1 { font-size: clamp(1.8rem, 8vw, 2.6rem); }
+  .hero-sub { font-size: 0.88rem; max-width: 100%; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn-primary-orange,
+  .hero-actions .btn-hero-outline { width: 100%; text-align: center; }
+  .hero-tagline { font-size: 0.82rem; }
+
+  .scroll-indicator { bottom: 18px; }
+
+  .section { padding: 50px 4vw; }
+  .section-tight { padding: 44px 4vw; }
+  .eyebrow { font-size: 0.68rem; }
+  .section-lead { font-size: 0.9rem; }
+
+  .about-section { gap: 36px; }
+  .about-highlights { gap: 8px; }
+  .highlight-chip { font-size: 0.78rem; padding: 6px 12px; }
+  .about-card { padding: 22px; }
+  .about-card-header { gap: 10px; margin-bottom: 18px; }
+  .stat-item { padding: 12px 6px; }
+  .stat-item b { font-size: 1.4rem; }
+  .stat-item span { font-size: 0.7rem; }
+  .about-address { font-size: 0.82rem; gap: 8px; }
+
+  .program-grid { gap: 14px; }
+  .program-card { padding: 20px 16px; }
+  .program-card h3 { font-size: 1rem; }
+  .program-card p { font-size: 0.82rem; }
+
+  .online { padding: 28px 4vw; gap: 24px; border-radius: 16px; }
+  .online-chips { gap: 8px; }
+  .online-chip { padding: 6px 12px; font-size: 0.78rem; }
+  .step-card { padding: 14px; }
+  .step-card b { font-size: 0.9rem; }
+  .step-card p { font-size: 0.82rem; }
+
+  .cta-banner { margin: 40px 4vw; padding: 30px 4vw; border-radius: 16px; }
+  .cta-content p { font-size: 0.9rem; }
+
+  .footer-inner { padding: 36px 4vw 18px; }
+  .footer-top { gap: 30px; padding-bottom: 28px; }
+  .footer-links { gap: 8px; }
+  .footer-links a, .footer-links span { font-size: 0.85rem; }
+  .footer-contact-item { font-size: 0.85rem; }
+  .footer-bottom { font-size: 0.75rem; }
+
+  .modal-overlay { padding: 12px; }
+  .modal-panel { padding: 22px 16px; max-height: 92vh; }
+  .modal-header { gap: 10px; }
+  .modal-title { font-size: 1.1rem; }
+  .modal-subtitle { font-size: 0.82rem; }
+  .mode-btn { font-size: 0.85rem; padding: 9px; }
+  .enroll-form label { font-size: 0.8rem; }
+  .enroll-form input,
+  .enroll-form select { padding: 10px 11px; font-size: 0.88rem; }
+}
+
+/* ---- Small phones (<= 420px) ---- */
+@media (max-width: 420px) {
+  .nav { padding: 12px 3.5vw; }
+  .nav.scrolled { padding: 8px 3.5vw; }
+  .nav-brand { gap: 7px; }
+  .nav-brand-text { font-size: 0.72rem; line-height: 1.1; }
+  .nav-cta { padding: 6px 12px; font-size: 0.72rem; border-radius: 999px; }
+
+  .hero { min-height: 460px; }
+  .hero-content { padding: 0 3.5vw; }
+  .hero-content h1 { font-size: clamp(1.6rem, 8.5vw, 2.2rem); line-height: 1.08; }
+  .hero-sub { font-size: 0.82rem; margin-top: 12px; line-height: 1.5; }
+  .hero-eyebrow { font-size: 0.62rem; padding: 5px 10px; margin-bottom: 14px; gap: 5px; }
+  .hero-actions { margin-top: 18px; gap: 8px; }
+
+  .admission-strip { padding: 10px 3.5vw; gap: 8px; flex-direction: column; align-items: stretch; text-align: center; }
+  .strip-label { font-size: 0.78rem; }
+  .strip-sub { font-size: 0.82rem; flex-basis: auto; }
+  .strip-btn { padding: 9px 16px; }
+
+  .section { padding: 42px 3.5vw; }
+  .section-tight { padding: 38px 3.5vw; }
+  .section h2 { font-size: clamp(1.3rem, 5vw, 1.8rem); }
+
+  .about-section { gap: 28px; }
+  .about-card { padding: 18px; border-radius: 14px; }
+  .about-stats { border-radius: 10px; }
+  .stat-item { padding: 10px 4px; }
+  .stat-item b { font-size: 1.2rem; }
+  .stat-item span { font-size: 0.65rem; }
+
+  .program-grid { grid-template-columns: 1fr; gap: 12px; }
+  .program-card { padding: 18px 14px; }
+
+  .online { padding: 22px 3.5vw; border-radius: 14px; }
+  .online h2 { font-size: 1.3rem; }
+  .step-card { padding: 12px; gap: 10px; border-radius: 10px; }
+  .step-num { width: 26px; height: 26px; font-size: 0.8rem; }
+
+  .cta-banner { margin: 32px 3.5vw; padding: 24px 3.5vw; border-radius: 14px; }
+  .cta-content h2 { font-size: 1.15rem; }
+
+  .footer-inner { padding: 30px 3.5vw 16px; }
+  .footer-top { gap: 24px; }
+  .footer-bottom { flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+
+  .modal-panel { padding: 18px 14px; border-radius: 16px; }
+  .modal-title { font-size: 1rem; }
+  .modal-success h3 { font-size: 1.2rem; }
+  .modal-success p { font-size: 0.88rem; }
+  .field-row { gap: 10px; }
+}
+
+/* ---- Mobile menu animation ---- */
+.mobile-menu {
+  animation: mobileMenuIn 0.25s ease;
+}
+@keyframes mobileMenuIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Touch-friendly tap targets ---- */
+@media (hover: none) and (pointer: coarse) {
+  .program-cta { min-height: 44px; min-width: 44px; }
+  .nav-links a { padding: 8px 0; }
+  .footer-links a { padding: 4px 0; display: inline-block; }
+  .subject-option { min-height: 44px; }
+  .mode-btn { min-height: 44px; }
+  .hamburger { min-height: 44px; min-width: 44px; }
+}
+
+/* ---- Hide decorative stars on small screens ---- */
+@media (max-width: 600px) {
+  .hero .star-decor,
+  .cta-banner .star-decor {
+    display: none;
+  }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero-slide { animation: none; opacity: 1; }
+  .hero-slide:not(:first-child) { display: none; }
+  .scroll-indicator { display: none; }
+}
+
+/* ---- Dark mode support (optional, respects system) ---- */
+@media (prefers-color-scheme: dark) {
+  /* Only apply if you want dark mode — uncomment below */
+  /* body { background: #0d2109; color: #e8f5e6; } */
+}
+
+/* ---- Print styles ---- */
+@media print {
+  .nav, .hamburger, .mobile-menu, .scroll-indicator,
+  .loader-overlay, .hero-slide, .hero-overlay,
+  .cta-banner, .modal-overlay { display: none !important; }
+  .hero { min-height: auto; height: auto; background: #1A6B12; }
+  .hero-content { color: #000; }
+  .hero-content h1 { color: #000; }
+  body { background: #fff; }
 }
